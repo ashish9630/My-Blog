@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog - Technology</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="#">
+            <i class="bi bi-journal-text"></i> MyBlog
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('technology') }}">
+                        Technology
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('lifestyle') }}">Lifestyle</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('travel') }}">Travel</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex ms-lg-3 mt-3 mt-lg-0">
+
+                <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search technology..."
+                >
+
+                <button class="btn btn-primary">
+                    <i class="bi bi-search"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="bg-primary text-white py-5">
+
+    <div class="container text-center">
+
+        <i class="bi bi-cpu fs-1"></i>
+
+        <h1 class="display-4 fw-bold mt-2">
+            Technology
+        </h1>
+
+        <p class="lead mb-0">
+            Explore the latest trends, tutorials, tools and innovations
+            in technology.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TECHNOLOGY CATEGORIES ================= -->
+<section class="py-4 bg-light">
+
+    <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+
+            <a href="#" class="btn btn-primary">
+                All
+            </a>
+
+            <a href="#" class="btn btn-outline-primary">
+                Programming
+            </a>
+
+            <a href="#" class="btn btn-outline-primary">
+                AI & Machine Learning
+            </a>
+
+            <a href="#" class="btn btn-outline-primary">
+                Web Development
+            </a>
+
+            <a href="#" class="btn btn-outline-primary">
+                Cloud Computing
+            </a>
+
+            <a href="#" class="btn btn-outline-primary">
+                Cyber Security
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED TECHNOLOGY ================= -->
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold mb-4">
+            Featured Technology Article
+        </h2>
+
+        <div class="card border-0 shadow overflow-hidden">
+
+            <div class="row g-0">
+
+                <div class="col-lg-7">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                        class="img-fluid w-100 h-100"
+                        style="object-fit: cover;"
+                        alt="Technology"
+                    >
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <span class="badge bg-primary mb-3">
+                            Technology
+                        </span>
+
+                        <h2 class="fw-bold">
+                            The Future of Artificial Intelligence
+                        </h2>
+
+                        <p class="text-muted mt-3">
+                            Artificial Intelligence is transforming
+                            software development, healthcare, education,
+                            business and many other industries.
+                        </p>
+
+                        <div class="d-flex align-items-center mt-4">
+
+                            <div
+                                class="rounded-circle bg-primary text-white
+                                d-flex align-items-center justify-content-center"
+                                style="width:45px;height:45px;"
+                            >
+                                A
+                            </div>
+
+                            <div class="ms-3">
+
+                                <strong>Admin</strong>
+
+                                <small class="d-block text-muted">
+                                    October 5, 2026 · 8 min read
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="btn btn-primary mt-4">
+                            Read Full Article
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LATEST TECHNOLOGY POSTS ================= -->
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- MAIN POSTS -->
+            <div class="col-lg-8">
+
+                <h2 class="fw-bold mb-4">
+                    Latest Technology Articles
+                </h2>
+
+
+                <!-- POST 1 -->
+                <div class="card border-0 shadow-sm mb-4">
+
+                    <div class="row g-0">
+
+                        <div class="col-md-5">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                                class="img-fluid w-100 h-100"
+                                style="object-fit:cover;"
+                                alt="Web Development"
+                            >
+
+                        </div>
+
+                        <div class="col-md-7">
+
+                            <div class="card-body p-4">
+
+                                <span class="badge bg-primary">
+                                    Web Development
+                                </span>
+
+                                <h4 class="fw-bold mt-2">
+                                    Complete Web Development Roadmap
+                                </h4>
+
+                                <p class="text-muted">
+                                    Learn HTML, CSS, JavaScript, frontend
+                                    frameworks, backend development and
+                                    databases.
+                                </p>
+
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar"></i>
+                                    October 4, 2026
+                                    &nbsp; | &nbsp;
+                                    7 min read
+                                </small>
+
+                                <br>
+
+                                <a href="#" class="btn btn-outline-primary mt-3">
+                                    Read More
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POST 2 -->
+                <div class="card border-0 shadow-sm mb-4">
+
+                    <div class="row g-0">
+
+                        <div class="col-md-5">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80"
+                                class="img-fluid w-100 h-100"
+                                style="object-fit:cover;"
+                                alt="Python Programming"
+                            >
+
+                        </div>
+
+                        <div class="col-md-7">
+
+                            <div class="card-body p-4">
+
+                                <span class="badge bg-success">
+                                    Programming
+                                </span>
+
+                                <h4 class="fw-bold mt-2">
+                                    Why Python Is Popular in 2026
+                                </h4>
+
+                                <p class="text-muted">
+                                    Discover why Python continues to be
+                                    widely used in web development,
+                                    automation, data science and AI.
+                                </p>
+
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar"></i>
+                                    October 3, 2026
+                                    &nbsp; | &nbsp;
+                                    6 min read
+                                </small>
+
+                                <br>
+
+                                <a href="#" class="btn btn-outline-primary mt-3">
+                                    Read More
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POST 3 -->
+                <div class="card border-0 shadow-sm mb-4">
+
+                    <div class="row g-0">
+
+                        <div class="col-md-5">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                                class="img-fluid w-100 h-100"
+                                style="object-fit:cover;"
+                                alt="Artificial Intelligence"
+                            >
+
+                        </div>
+
+                        <div class="col-md-7">
+
+                            <div class="card-body p-4">
+
+                                <span class="badge bg-danger">
+                                    Artificial Intelligence
+                                </span>
+
+                                <h4 class="fw-bold mt-2">
+                                    How AI Is Changing Software Development
+                                </h4>
+
+                                <p class="text-muted">
+                                    Explore how AI-powered coding tools
+                                    are helping developers write, test
+                                    and maintain software.
+                                </p>
+
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar"></i>
+                                    October 2, 2026
+                                    &nbsp; | &nbsp;
+                                    8 min read
+                                </small>
+
+                                <br>
+
+                                <a href="#" class="btn btn-outline-primary mt-3">
+                                    Read More
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POST 4 -->
+                <div class="card border-0 shadow-sm mb-4">
+
+                    <div class="row g-0">
+
+                        <div class="col-md-5">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80"
+                                class="img-fluid w-100 h-100"
+                                style="object-fit:cover;"
+                                alt="Cloud Computing"
+                            >
+
+                        </div>
+
+                        <div class="col-md-7">
+
+                            <div class="card-body p-4">
+
+                                <span class="badge bg-warning text-dark">
+                                    Cloud Computing
+                                </span>
+
+                                <h4 class="fw-bold mt-2">
+                                    Introduction to Cloud Computing
+                                </h4>
+
+                                <p class="text-muted">
+                                    Understand AWS, Azure, Google Cloud,
+                                    cloud storage and modern application
+                                    deployment.
+                                </p>
+
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar"></i>
+                                    October 1, 2026
+                                    &nbsp; | &nbsp;
+                                    5 min read
+                                </small>
+
+                                <br>
+
+                                <a href="#" class="btn btn-outline-primary mt-3">
+                                    Read More
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAGINATION -->
+                <nav class="mt-4">
+
+                    <ul class="pagination">
+
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">
+                                Previous
+                            </a>
+                        </li>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">
+                                1
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                2
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                3
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Next
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+            <!-- ================= SIDEBAR ================= -->
+            <div class="col-lg-4">
+
+                <!-- SEARCH -->
+                <div class="card border-0 shadow-sm mb-4">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold">
+                            Search Articles
+                        </h5>
+
+                        <div class="input-group mt-3">
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search..."
+                            >
+
+                            <button class="btn btn-primary">
+                                <i class="bi bi-search"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TECHNOLOGY TOPICS -->
+                <div class="card border-0 shadow-sm mb-4">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold mb-3">
+                            Technology Topics
+                        </h5>
+
+                        <div class="list-group">
+
+                            <a href="#"
+                               class="list-group-item list-group-item-action">
+                                <i class="bi bi-robot me-2"></i>
+                                Artificial Intelligence
+                            </a>
+
+                            <a href="#"
+                               class="list-group-item list-group-item-action">
+                                <i class="bi bi-code-slash me-2"></i>
+                                Programming
+                            </a>
+
+                            <a href="#"
+                               class="list-group-item list-group-item-action">
+                                <i class="bi bi-globe me-2"></i>
+                                Web Development
+                            </a>
+
+                            <a href="#"
+                               class="list-group-item list-group-item-action">
+                                <i class="bi bi-cloud me-2"></i>
+                                Cloud Computing
+                            </a>
+
+                            <a href="#"
+                               class="list-group-item list-group-item-action">
+                                <i class="bi bi-shield-check me-2"></i>
+                                Cyber Security
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TRENDING -->
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold mb-3">
+                            Trending Articles
+                        </h5>
+
+                        <div class="mb-3">
+
+                            <h6 class="fw-bold">
+                                10 Python Projects for Beginners
+                            </h6>
+
+                            <small class="text-muted">
+                                <i class="bi bi-eye"></i>
+                                8.2K views
+                            </small>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="mb-3">
+
+                            <h6 class="fw-bold">
+                                React vs Angular in 2026
+                            </h6>
+
+                            <small class="text-muted">
+                                <i class="bi bi-eye"></i>
+                                7.1K views
+                            </small>
+
+                        </div>
+
+                        <hr>
+
+                        <div>
+
+                            <h6 class="fw-bold">
+                                Top AI Tools for Developers
+                            </h6>
+
+                            <small class="text-muted">
+                                <i class="bi bi-eye"></i>
+                                6.5K views
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="bg-primary text-white py-5">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold">
+            Stay Updated With Technology
+        </h2>
+
+        <p>
+            Subscribe and receive our latest technology articles.
+        </p>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
+
+                <div class="input-group">
+
+                    <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        placeholder="Enter your email"
+                    >
+
+                    <button class="btn btn-dark">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white py-4">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h5 class="fw-bold">
+                    <i class="bi bi-journal-text"></i>
+                    MyBlog
+                </h5>
+
+                <p class="text-secondary">
+                    Technology, programming and innovation.
+                </p>
+
+            </div>
+
+            <div class="col-md-6 text-md-end">
+
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+
+                <a href="#" class="text-white">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center text-secondary mb-0">
+            © 2026 MyBlog. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
